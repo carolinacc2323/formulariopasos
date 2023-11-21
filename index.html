@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Varios Pasos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagen/Logo-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>FORMULARIO EN VARIOS PASOS</h1>
+            <div class="logo">
+                <img src="imagen/Logo-removebg-preview.png" alt="Enclaves Singulares Logo">
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="form-page active">
+            <h2>EL CONTENIDO DE TU QR</h2>
+            <h3>El funcionamiento de los URL</h3>
+            <div class="parrafo1">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam incidunt dolor porro modi possimus, quisquam ex obcaecati at, eos voluptatem, quas magnam? Mollitia laudantium illo debitis recusandae reiciendis, officia quos! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <img src="imagen/qr-code (7).png" alt="" class="contenido1" height="200px" width="200px">
+            <div class="parrafo_1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maiores doloremque quis delectus tempora aliquam, distinctio, voluptas dolorem reprehenderit corrupti, minus sapiente aut molestiae. Alias quam dignissimos obcaecati similique eligendi?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, facere recusandae consequuntur saepe et quos dicta nobis voluptate doloremque reiciendis similique pariatur voluptas nostrum, voluptatum accusantium velit non assumenda natus.</p>
+            </div>
+            <br><br><br><br><br><br>
+        <!-- <div>
+            <label for="">lorem ipsum</label>
+            <input type="text" name="" id="" class="form-input" placeholder="Algo random">
+        </div>
+        <div>
+            <label for="">lorem ipsum</label>
+            <input type="text" name="" id="" class="form-input" placeholder="Algo random">
+        </div> -->
+        </div>
+<div class="form-page">
+    <h2>NOVEDADES DE ARANJUEZ</h2>
+    <h3>Una nueva forma de hacer turismo</h3>
+    <div class="parrafo2">
+    <p>Por favor introduzca la longitud y la latitud del sitio en donde se encuentra o hacia donde se dirige:</p>
+    </div>
+    <div class="geo">
+        <video src="imagen/geo.mp4" autoplay loop></video>
+        <form class="formulario" id="coordsForm">
+            Longitud: <input type="text" id="longitud" name="longitud" pattern="^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?)$" placeholder="(O3°36'8.86)" required>
+            <div id="errorLongitud" style="color:red;"></div>
+            <br>
+            Latitud: <input type="text" id="latitud" name="latitud" pattern="^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?)$" placeholder="(N40°1'51.89)" required>
+            <div id="errorLatitud" style="color:red;"></div>
+            <br>
+            <!-- <button id="open" class="boton3">GENERAR</button> -->
+            <!-- <button type="submit" id="enviar3">Generar</button> -->
+            
+            <!-- <div class="modal-container" id="modal-container">
+                <div class="modal">
+                <h3>Lo has logrado</h3>
+                <p>holi</p>
+                <button id="close" class="boton3">CERRAR</button>
+                </div>
+            </div> -->
+        </form>
+        <br><br><br><br><br>
+    </div>
+</div>
+<div class="form-page">
+    <h2>FORMULARIO</h2>
+    <h3>Rellene con sus datos</h3>
+    <div class="parrafo3">
+    <p>Por favor, para continuar con el proceso se requiere que rellene el formulario con los datos solicitados</p>
+    </div>
+    <div class="parrafo7">
+        <form action="/action_page.php" class="formulario3">
+            <p>Nombre:</p>
+            <input type="text" name="firstname" class="nombre">
+            <p>Apellidos:</p>
+            <input type="text" name="lastname" class="apellido">
+            <!-- <input type="submit" value="Enviar"> -->
+            <div class="parrafo8">
+                <p>Correo electrónico:</p>
+            </div>
+            <form>
+                <input type="email" name="email" class="correo" placeholder="tucorreo@gmail.com">
+            </form>
+        </div>
+    <!-- <div class="formulario2">
+        <img src="imagen/formulario.jpg" alt=""
+        width="500px" height="500px">
+    </div> -->
+
+    </div>
+<div class="form-page">
+    <h2>TIPOS DE QR</h2>
+    <h3>Elija el QR que más le guste</h3>
+    <div class="parrafo4">
+        <p>Seleccione un QR</p>
+    </div>
+    <div id="qrs">
+    <input type="radio" name="tam" />
+    <label for="box1"><img src="imagen/qr-code (3).png" height="85px" width="85px"></label>
+    <input type="radio" name="tam" />
+    <label for="box2"><img src="imagen/qr-code (4).png" height="85px" width="85px"></label>
+    <input type="radio" name="tam" />
+    <label for="box2"><img src="imagen/qr-code (5).png" height="85px" width="85px"></label>
+    <input type="radio" name="tam" />
+    <label for="box2"><img src="imagen/qr-code (6).png" height="85px" width="85px"></label>
+    <input type="radio" name="tam" />
+    <label for="box2"><img src="imagen/qr-code (11).png" height="85px" width="85px"></label>
+    </div>
+    <br>
+    <div class="parrafo5">
+    <p>Para personalizar aún más su QR, puede seleccionar una imagen para que forme parte de el:</p>
+    </div>
+    <div class="parrafo6">
+    <p>Seleccione un archivo:</p>
+    </div>
+    <form class="fichero">
+        <input type="file" name="myFile">
+    </form>
+    <div class="barra">
+    <p>Puede adecuar la opacidad de la imagen:</p>
+    </div>
+    <form class="opacidad">
+        <input type="range" name="points" min="0" max="10">
+    </form>
+    <div class="color">
+    <p>Seleccione un color:</p>
+</div>
+    <div class="cambioqrs">
+        <img src="imagen/qr-code (3).png" id="imgchange" alt="">
+    </div>
+    <div class="color-select">
+        <div id="black"></div>
+        <div id="blue"></div>
+        <div id="green"></div>
+        <div id="pink"></div>
+        <div id="purple"></div>
+    </div>
+    <br><br>
+</div>
+<div class="form-page">
+    <h2>PASO FINAL</h2>
+    <h3>Descargar</h3>
+    <!-- <p>Dejános tu comentario y ayudanos a mejorar.</p>
+    <form>
+        <div class="email">
+        <textarea rows="5" cols="50"></textarea><br>
+        <input type="submit" value="Enviar" placeholder="Escribir comentario" id="enviar2">
+        </div>
+    </form> -->
+    <form action="">
+        <legend>
+            <label for="extension">Elije la extension:</label>
+        </legend>
+        <select id="extension" name="extension">
+        <option value="png">PNG</option>
+        <option value="svg">SVG</option>
+        <option value="jpg">JPG</option>
+        </select>
+        <a href="imagen/c2.jpg" role="button" download>DESCARGAR</a>
+        <div class="archivo">
+            <img src="imagen/archivo.jpg" alt="" width="350px" height="350px">
+        </div>
+    </form>
+
+    <br><br><br><br>
+</div>
+<div class="form-buttons">
+    <button type="button" class="boton1" id="btn-prev" disabled>Anterior</button>
+    <button type="button" class="boton2" id="btn-next">Siguiente</button>
+</div>
+</div>
+
+<footer>
+    <br/>
+    <p>2023 Carolina Cango Cobos&copy</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
